@@ -1,0 +1,31 @@
+### Vue ignore files
+# Logs
+books-frontend/logs
+books-frontend/*.log
+books-frontend/npm-debug.log*
+books-frontend/yarn-debug.log*
+books-frontend/yarn-error.log*
+books-frontend/pnpm-debug.log*
+books-frontend/lerna-debug.log*
+
+books-frontend/node_modules
+books-frontend/.DS_Store
+books-frontend/dist
+books-frontend/dist-ssr
+books-frontend/coverage
+books-frontend/*.local
+
+books-frontend/cypress/videos/
+books-frontend/cypress/screenshots/
+
+# Editor directories and files
+books-frontend/.vscode/*
+books-frontend/!.vscode/extensions.json
+books-frontend/.idea
+books-frontend/*.suo
+books-frontend/*.ntvs*
+books-frontend/*.njsproj
+books-frontend/*.sln
+books-frontend/*.sw?
+
+books-frontend/*.tsbuildinfo
