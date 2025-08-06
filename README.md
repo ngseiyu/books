@@ -1,6 +1,7 @@
 # NG SEI YU
 
 Backend stack: **Golang**, **Fiber** web framework, **GORM** with **sqlite** for storage
+
 Frontend stack: **Vue JS** with **Tailwind**
 
 The frontend app has been built, and its dist contents included in the backend code.
