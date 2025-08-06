@@ -29,3 +29,5 @@ books-frontend/*.sln
 books-frontend/*.sw?
 
 books-frontend/*.tsbuildinfo
+
+books-backend/*.db
