@@ -2,7 +2,7 @@
 import { RouterView } from 'vue-router'
 </script>
 
-<template>
+<template class="min-h-screen bg-teal-200">
   <RouterView />
 </template>
 
