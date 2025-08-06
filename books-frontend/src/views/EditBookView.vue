@@ -19,7 +19,7 @@ async function handleSubmit() {
   try {
     const resp = await axios.post(`/api/books/${bookId}`, editBook.value)
     toast.success('Book updated')
-    router.push(`/books/${resp.data.ID}`)
+    router.push(`/books/${resp.data.id}`)
   } catch (error) {
     console.error('error updating book', error)
     toast.error('Book not updated')
