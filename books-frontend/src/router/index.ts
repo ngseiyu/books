@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-// import BooksView from '@/views/BooksView.vue'
 import BookView from '@/views/BookView.vue'
 import EditBookView from '@/views/EditBookView.vue'
 import AddBookView from '@/views/AddBookView.vue'
