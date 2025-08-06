@@ -77,7 +77,20 @@ func CreateBook(c *fiber.Ctx) error {
 		})
 	}
 
-	return c.Status(http.StatusCreated).JSON(book)
+	bookResp := models.BookDetails{}
+	bookResp, err := database.GetBook(db, int(book.ID))
+	if err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			return c.Status(http.StatusNotFound).JSON(fiber.Map{
+				"error": "book id not found",
+			})
+		}
+		return c.Status(http.StatusInternalServerError).JSON(fiber.Map{
+			"error": "internal server error",
+		})
+	}
+
+	return c.Status(http.StatusCreated).JSON(bookResp)
 }
 
 func UpdateBook(c *fiber.Ctx) error {
