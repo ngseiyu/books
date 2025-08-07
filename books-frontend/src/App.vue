@@ -2,8 +2,10 @@
 import { RouterView } from 'vue-router'
 </script>
 
-<template class="min-h-screen bg-teal-200">
-  <RouterView />
+<template>
+  <div class="w-full h-full min-h-screen bg-teal-200">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped></style>
